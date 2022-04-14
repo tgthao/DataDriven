@@ -6,8 +6,8 @@
   
   
 	<properties>
-		<serenity.version>2.0.81</serenity.version>
-		<serenity.maven.version>2.0.81</serenity.maven.version>
+		<serenity.version>3.2.4</serenity.version>
+		<serenity.maven.version>3.2.4</serenity.maven.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<encoding>UTF-8</encoding>
 	</properties>

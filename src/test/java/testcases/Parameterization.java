@@ -49,7 +49,7 @@ public class Parameterization {
         data[1][1] =excel.getCellData(SheetName,1,3);*/
         for(int rowNum=2; rowNum<=rows; rowNum++){
             for(int colNum =0; colNum<cols;colNum++){
-                data[rowNum][colNum] =excel.getCellData(SheetName,colNum,rowNum);
+                data[rowNum-2][colNum] =excel.getCellData(SheetName,colNum,rowNum);
             }
         }
 
