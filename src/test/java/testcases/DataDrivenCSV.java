@@ -4,6 +4,7 @@ import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
+import net.thucydides.junit.annotations.Concurrent;
 import net.thucydides.junit.annotations.UseTestDataFrom;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,6 +15,7 @@ import java.io.File;
 
 @RunWith(SerenityParameterizedRunner.class)
 @UseTestDataFrom("/Users/giangthao/Desktop/WorkSpace/DataDriven/src/test/resources/testdata/data.csv")
+@Concurrent(threads = "2")
 public class DataDrivenCSV {
     private String username;
     private String password;
