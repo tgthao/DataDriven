@@ -2,6 +2,7 @@ package testcases;
 
 import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Managed;
+import net.thucydides.core.annotations.Narrative;
 import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.annotations.Title;
 import net.thucydides.junit.annotations.Concurrent;
@@ -16,6 +17,8 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.Collection;
 
+@Narrative(text = {"In order to Run parameterized test","As a Serenity Runner",
+"We need to Integrate Excel Reading"})
 @RunWith(SerenityParameterizedRunner.class)
 @Concurrent(threads = "2")
 public class Parameterization {
